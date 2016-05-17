@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "author": "Patrick Dubroy <pdubroy@gmail.com> (http://dubroy.com)",
   "license": "MIT",
-  "dependencies": {},
+  "repository": "https://github.com/cdglabs/checked-emitter",
+  "dependencies": {
+    "fbemitter": "^2.0.2",
+    "inherits": "^2.0.1"
+  },
   "devDependencies": {
     "browserify": "^13.0.1",
     "eslint": "^2.7.0",
