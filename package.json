@@ -26,11 +26,11 @@
     "lint": "eslint index.js lib test"
   },
   "browserify": {
-    "opts": "-d -s checked-emitter -o dist/checked-emitter.js"
+    "opts": "-d -s CheckedEmitter -o dist/checked-emitter.js"
   },
   "main": "index.js",
   "directories": {
     "test": "test"
   },
-  "description": ""
+  "description": "A wrapper for fbemitter that requires event types to be registered before use."
 }
