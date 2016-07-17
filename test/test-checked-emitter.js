@@ -71,3 +71,32 @@ test('registerEvents() and events()', t => {
 
   t.end();
 });
+
+test('once()', t => {
+  let e = new CheckedEmitter();
+  var result = '';
+
+  e.registerEvents({
+    zero: [],
+    one: ['a'],
+    two: ['a', 'b']
+  });
+
+  e.once('zero', () => { result += '0'; });
+  e.once('one', a => { result += a; });
+  e.once('two', (a, b) => { result += a + b; });
+
+  e.emit('zero');
+  e.emit('zero');
+  t.deepEqual(result, '0');
+
+  e.emit('one', 1);
+  e.emit('one', 'x');
+  t.deepEqual(result, '01');
+
+  e.emit('two', 2, 'two');
+  e.emit('two', 'y', 'z');
+  t.deepEqual(result, '012two');
+
+  t.end();
+});
