@@ -19,6 +19,7 @@
   "rules": {
     "brace-style": [2, "1tbs", {"allowSingleLine": true}],
     "consistent-this": [2, "self"],
+    "max-statements-per-line": 0,
     "no-constant-condition": 0,
     "no-implicit-coercion": [2, {"allow": ["!!", "+"]}],
     "no-unused-vars": [2, {"vars": "all", "args": "none"}],
