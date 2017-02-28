@@ -5,8 +5,8 @@
   "license": "MIT",
   "repository": "https://github.com/pdubroy/checked-emitter",
   "dependencies": {
-    "fbemitter": "^2.0.2",
-    "inherits": "^2.0.1"
+    "fbemitter": "^2.1.1",
+    "inherits": "^2.0.3"
   },
   "devDependencies": {
     "browserify": "^13.0.1",
